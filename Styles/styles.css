@@ -6,4 +6,22 @@
 
 body{
     font-family: "Lato", sans-serif;
+    background-color: #FCF8CA;
+}
+
+header{
+    background-color: white;
+    padding: 12px 120px;
+    height: 80px;
+    border-bottom: 1px solid #3A35411F;
+    display: flex;
+    align-items: center;
+}
+.nav-bar{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    position: relative;
 }
