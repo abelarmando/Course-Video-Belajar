@@ -15,8 +15,6 @@ body{
     background-color: #fcf8ca;
     display: flex;
     align-items: center;
-    /* justify-content: center; */
-    /* align-items: center; */
     flex-direction: column;
     min-height: 100vh;
     padding: 128px 120px;
@@ -122,17 +120,18 @@ header{
 }
 
 .background-utama .content button{
-    width: 30%;
-    height: 15%;
+    width: 370px;
+    height: 50px;
     background-color: #3ECF4C;
     border: none;
     border-radius: 10px;
     cursor: pointer;
     color: white;
     font-size: 1rem;
+    padding: 10px 26px;
 }
 
-/* kumpulan video */
+/* kumpulan video judl */
 
 .kumpulan-video{
     width: 100%;
@@ -184,10 +183,22 @@ header{
 /* kumpulan video */
 
 .box-card{
-    display: flex;
+    display: grid;
+    /* grid-template-rows: repeat(4, 430px); */
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 16px;
+    /* border: solid; */
+    /* justify-content: center; */
+
+    /* display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    gap: 16px;
+    justify-items: stretch; */
+}
+
+.grid-card{
+    width: 100%;
+    border: solid;
 }
 
 .card{
@@ -199,8 +210,8 @@ header{
     justify-content: center;
     padding: 20px;
     gap: 20px;
-    width: 400px;
-    height: 430px;
+    width: 100%;
+    height: 100%;
 }
 
 .main-card{
@@ -232,6 +243,17 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+.rating-harga .rating{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.rating-harga .jumlah-rating{
+    text-decoration: underline;
+    text-underline-offset: 2px;    
 }
 
 .rating-harga .harga{
@@ -294,6 +316,13 @@ header{
     .content{
         padding: 64px 20px;
     }
+
+    .background-utama .content button{
+        height: fit-content;
+        width: 100%;
+    }
+
+    /* kumpulan video */
     
 }
 
