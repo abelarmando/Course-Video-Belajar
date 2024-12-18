@@ -15,8 +15,9 @@ body{
     background-color: #fcf8ca;
     display: flex;
     justify-content: center;
-    align-items: center;
+    /* align-items: center; */
     min-height: 100vh;
+    padding: 128px 120px;
 }
 
 
@@ -25,6 +26,7 @@ header{
     position: fixed;
     top: 0;
     left: 0;
+    z-index: 100;
 }
 
 
@@ -78,8 +80,67 @@ header{
     display: none;
 }
 
+/* background utama */
+.background-utama {
+    width: 100%;
+    height: 450px;
+    background-image: url(../img/Background_Image/Backgorund_banner.jpg );
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    border-radius: 10px;
+    position: relative;
+}
+
+.content{
+    height: 100%;
+    width: 100%;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 82px 140px 64px 140px;
+    gap: 24px;
+    border-radius: 10px;
+    z-index: 2;
+}
+
+.gradient{
+    height: 100%;
+    width: 100%;
+    background-color: #000000CC;
+    opacity: 80%;
+    position: absolute;
+    border-radius: 10px;
+}
+
+.background-utama .content button{
+    width: 370px;
+    height: 50px;
+    background-color: #3ECF4C;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    color: white;
+    font-size: 1rem;
+    
+}
+
+
 /* responsive*/
-@media (max-width: 610px){
+@media (max-width: 910px){
+    /* penulisan */
+    div *{
+        font-size: 14px;
+    }
+    h1{
+        font-size: 24px;
+    }
+
     .nav-bar{
         padding: 16px 24px;
     }
@@ -109,4 +170,19 @@ header{
     #check:checked ~ .menu {
         right: 0;
     }
+
+    /* banner utama */
+    .background-utama{
+        height: 550px;
+        width: 320px;
+    }
+    .content{
+        padding: 64px 20px;
+    }
+
+    .background-utama .content button{
+        height: fit-content;
+        width: fit-content;
+    }
+    
 }
