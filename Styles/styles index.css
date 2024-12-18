@@ -119,15 +119,14 @@ header{
 }
 
 .background-utama .content button{
-    width: 370px;
-    height: 50px;
+    width: 50%;
+    height: 15%;
     background-color: #3ECF4C;
     border: none;
     border-radius: 10px;
     cursor: pointer;
     color: white;
     font-size: 1rem;
-    
 }
 
 
@@ -143,6 +142,10 @@ header{
 
     .nav-bar{
         padding: 16px 24px;
+    }
+
+    body{
+        padding: 100px 24px;
     }
 
     /* menampilkan hamburger menu */
@@ -172,17 +175,8 @@ header{
     }
 
     /* banner utama */
-    .background-utama{
-        height: 550px;
-        width: 320px;
-    }
     .content{
         padding: 64px 20px;
-    }
-
-    .background-utama .content button{
-        height: fit-content;
-        width: fit-content;
     }
     
 }
