@@ -14,10 +14,13 @@ h1{
 body{
     background-color: #fcf8ca;
     display: flex;
-    justify-content: center;
+    align-items: center;
+    /* justify-content: center; */
     /* align-items: center; */
+    flex-direction: column;
     min-height: 100vh;
     padding: 128px 120px;
+    gap: 40px;
 }
 
 
@@ -128,6 +131,47 @@ header{
     color: white;
     font-size: 1rem;
 }
+
+/* kumpulan video */
+
+.kumpulan-video{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;    
+}
+.kategori-video{
+    position: relative;
+}
+
+.kategori-video ul{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.kategori-video ul li{
+    display: inline-block;
+}
+
+.kategori-video ul li span{
+    color: red;
+    position: relative;
+}
+
+
+.kumpulan-video .kategori-video ul li span::after{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    transform: translateY(10px);
+    left: 0;
+    width: 50%;
+    height: 6px;
+    background-color: #F64920;
+    border-radius: 10px;
+}
+
 
 
 /* responsive*/
