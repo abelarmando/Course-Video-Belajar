@@ -171,16 +171,6 @@ header{
     cursor: pointer;
 }
 
-.input-no-hp {
-    /* width: 100%;
-    height: 100%; */
-    /* border: 1px solid #F1F1F1;
-    border-radius: 6px;
-    padding: 5px 35px 5px 5px;
-    font-size: 1rem; */
-    /* border: solid; */
-}
-
 .no-regional{
     display: flex;
     gap: 10px;
