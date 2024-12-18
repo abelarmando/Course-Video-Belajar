@@ -131,7 +131,7 @@ header{
     padding: 10px 26px;
 }
 
-/* kumpulan video judl */
+/* kumpulan video judul */
 
 .kumpulan-video{
     width: 100%;
@@ -323,6 +323,21 @@ header{
     }
 
     /* kumpulan video */
+    /* .box-card{
+        display: flex;
+        flex-direction: column;
+    } */
+    .card{
+        width: 50%;
+        height: 40%;
+    }
+
+    .main-card{
+        flex-direction: row;
+    }
+    .potong-text{
+        display: none;
+    }
     
 }
 
