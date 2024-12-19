@@ -68,13 +68,13 @@ header{
 
 .open-menu {
     top: 50%;
-    right: 20px;
+    right: 24px;
     transform: translateY(-50%);
 }
 
 .close-menu {
     top: 24px;
-    right: 21px;
+    right: 24px;
 }
 
 #check {
@@ -139,26 +139,34 @@ header{
     flex-direction: column;
     gap: 32px;    
 }
+
+/* kategori course */
+
 .kategori-video{
     position: relative;
 }
 
 .kategori-video ul{
     display: flex;
-    align-items: center;
-    gap: 40px;
+    gap: 20px;
+    overflow-x: auto;
+    height: 60px;
+}
+
+.kategori-video ul::-webkit-scrollbar{
+    width: 0;
 }
 
 .kategori-video ul li {
-    display: inline-block;
+    display: flex;
+    align-items: center;
+    width: fit-content;
+    flex-shrink: 0;
 }
 
 .kategori-video ul li a{
-    display: inline-block;
     text-decoration: none;
-}
-
-.kategori-video ul li a{
+    justify-content: center;
     color: black;
     position: relative;
 }
@@ -184,16 +192,8 @@ header{
 
 .box-card{
     display: grid;
-    /* grid-template-rows: repeat(4, 430px); */
     grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
     gap: 16px;
-    /* border: solid; */
-    /* justify-content: center; */
-
-    /* display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    justify-items: stretch; */
 }
 
 .grid-card{
@@ -253,7 +253,7 @@ header{
 
 .rating-harga .jumlah-rating{
     text-decoration: underline;
-    text-underline-offset: 2px;    
+    text-underline-offset: 3px;    
 }
 
 .rating-harga .harga{
@@ -314,7 +314,7 @@ header{
 
     /* banner utama */
     .content{
-        padding: 64px 20px;
+        padding: 64px 24px;
     }
 
     .background-utama .content button{
@@ -322,18 +322,16 @@ header{
         width: 100%;
     }
 
-    /* kumpulan video */
-    /* .box-card{
-        display: flex;
-        flex-direction: column;
-    } */
+    .box-card{
+        grid-template-columns: 100%;
+    }
     .card{
-        width: 50%;
-        height: 40%;
+        width: 100%;
     }
 
     .main-card{
-        flex-direction: row;
+        width: 100%;
+        height: 40%;
     }
     .potong-text{
         display: none;
