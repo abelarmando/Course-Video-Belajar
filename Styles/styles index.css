@@ -286,8 +286,8 @@ header{
 /* form subscribe email */
 
 .input-email{
-    width: 60%;
-    height: 20%;
+    width: 525px;
+    height: 58px;
     display: flex;
     padding: 8px 8px 8px 32px;
     align-items: center;
