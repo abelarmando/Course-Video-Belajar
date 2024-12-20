@@ -166,3 +166,14 @@ header{
     align-items: center;
     cursor: pointer;
 }
+
+/* responsive */
+@media(max-width: 900px){
+    body{
+        padding: 100px 20px;
+    }
+
+    header{
+        padding: 16px 20px;
+    }
+}
