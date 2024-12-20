@@ -17,11 +17,7 @@ body{
     justify-content: center;
     flex-direction: column;
     min-height: 100%;
-    
     gap: 40px;
-
-    /* grid-template-rows: repeat(4,auto-fit);
-    grid-template-columns: 2300px; */
 }
 
 .padding{
@@ -287,6 +283,10 @@ header{
     font-weight: 500;
 }
 
+.input-email{
+    display: flex;
+}
+
 /* footer */
 footer{
    display: flex;
@@ -325,7 +325,6 @@ hr{
 
 .keterangan-course{
     display: flex;
-    /* flex-direction: row; */
     gap: 30px;
 }
 
